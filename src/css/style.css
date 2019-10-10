@@ -514,4 +514,83 @@ img {
   font-size: 18px;
   line-height: 28px;
 }
+
+.advice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 251px;
+}
+
+.advice-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 930px;
+}
+
+.advice-text {
+  width: 440px;
+  padding-left: 14px;
+}
+
+.advice-text__title {
+  display: block;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #F15B5B;
+  margin-bottom: 36px;
+}
+
+.advice-text__subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  color: #515151;
+}
+
+.advice-form {
+  position: relative;
+  width: 283px;
+  margin-left: 150px;
+  padding-top: 19px;
+}
+
+.advice-form__input {
+  width: 100%;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: bold;
+  padding: 15px 21px;
+  margin-bottom: 32px;
+  border: 2px solid #515151;
+}
+
+.advice-form__polici {
+  display: block;
+  padding-top: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  opacity: .5;
+}
+
+.advice-form__btn {
+  position: absolute;
+  left: -216px;
+  bottom: -82px;
+  color: #ffffff;
+  background: #515151;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  letter-spacing: 4px;
+  padding: 17px 25px;
+}
 /*# sourceMappingURL=style.css.map */
