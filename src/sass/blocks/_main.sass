@@ -30,7 +30,7 @@
       text-align: center
       width: 592px
       padding-top: 150px
-      margin-bottom: 216px
+      margin-bottom: 219px
       &__time
         color: #747474
         font-size: 13px
@@ -61,17 +61,32 @@
         padding: 18px 65px   
     &-desc
       display: flex
-      width: 100%
-      padding: 0 180px
+      justify-content: space-between      
+      padding: 0 195px 0 180px
       &-item
-        width: 330px
+        width: 315px
         &__title
+          position: relative
           display: block
           font-size: 20px
           line-height: 24px
           letter-spacing: 3px
           color: #000000
           +bold
+          margin-bottom: 34px
+          padding-left: 25px
+          text-transform: uppercase
+          &:before
+            position: absolute
+            top: 12px
+            left: 0px
+            content: ''
+            width: 16px
+            height: 2px
+            background: #000000            
+        &__subtitle
+          font-size: 18px
+          line-height: 28px  
 
 
 

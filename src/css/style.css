@@ -430,7 +430,7 @@ img {
   text-align: center;
   width: 592px;
   padding-top: 150px;
-  margin-bottom: 216px;
+  margin-bottom: 219px;
 }
 
 .main-offer-text__time {
@@ -476,15 +476,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  padding: 0 180px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 195px 0 180px;
 }
 
 .main-offer-desc-item {
-  width: 330px;
+  width: 315px;
 }
 
 .main-offer-desc-item__title {
+  position: relative;
   display: block;
   font-size: 20px;
   line-height: 24px;
@@ -492,5 +495,23 @@ img {
   color: #000000;
   font-family: 'Proxima Nova Bold', sans-serif;
   font-weight: bold;
+  margin-bottom: 34px;
+  padding-left: 25px;
+  text-transform: uppercase;
+}
+
+.main-offer-desc-item__title:before {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background: #000000;
+}
+
+.main-offer-desc-item__subtitle {
+  font-size: 18px;
+  line-height: 28px;
 }
 /*# sourceMappingURL=style.css.map */
