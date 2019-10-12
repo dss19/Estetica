@@ -390,16 +390,78 @@ img {
   outline: none;
 }
 
-.menu-btn {
+.menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 205px;
+  background: #F8F2E9;
+  z-index: 5;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu__link {
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: bold;
+}
+
+.menu-group1 {
+  padding-left: 210px;
+  width: 573px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-group2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 596px;
+  border: 1px solid #515151;
+  margin-left: 158px;
+  padding: 28px 0 28px 50px;
+}
+
+.hamburger {
+  position: absolute;
+  right: 83px;
+  z-index: 10;
+}
+
+.hamburger-btn {
   position: relative;
   display: block;
   width: 18px;
   height: 54px;
-  margin-left: auto;
-  margin-right: 83px;
 }
 
-.menu-btn span {
+.hamburger-btn span {
   position: absolute;
   top: 50%;
   margin-top: -1px;
@@ -409,7 +471,7 @@ img {
   background-color: #515151;
 }
 
-.menu-btn span:before {
+.hamburger-btn span:before {
   content: '';
   position: absolute;
   bottom: 9px;
@@ -421,7 +483,7 @@ img {
   transition: 0.3s;
 }
 
-.menu-btn span:after {
+.hamburger-btn span:after {
   content: '';
   position: absolute;
   top: 9px;
@@ -433,17 +495,17 @@ img {
   transition: 0.3s;
 }
 
-.menu-btn_active span {
+.hamburger-btn_active span {
   height: 0;
 }
 
-.menu-btn_active span:after {
+.hamburger-btn_active span:after {
   top: 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.menu-btn_active span:before {
+.hamburger-btn_active span:before {
   bottom: -4px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -472,6 +534,7 @@ img {
 }
 
 .main-bg2 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +654,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 251px;
+  padding: 251px 0 113px;
 }
 
 .advice-wrap {
