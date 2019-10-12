@@ -10,35 +10,32 @@
 </head>
 
 <body>
+
   <!-- Главный блок -->
   <main class="main">
     <!-- Меню -->
     <div class="menu">
-      <div class="menu-group1">
+      <div class="menu-group">
         <a href="#" class="menu__link">каталог</a>
         <a href="#" class="menu__link">преимущества</a>
         <a href="#" class="menu__link">описание</a>
-      </div>  
-      <div class="menu-group2">
+      </div>
+      <div class="menu-group menu-group_bordered ">
         <a href="#" class="menu__link">Нужна консультация?</a>
         <a href="#" class="menu__link">Получить каталог</a>
         <a href="#" class="menu__link">остались вопросы?</a>
-      </div>      
-    </div>    
-    <!-- /Меню -->
-    <div class="main-bg1">
-      <span class="main-tagline">новая линия мебели</span>
+      </div>
     </div>
-    <div class="main-bg2">
-      <div class="logo main-logo">
+    <!-- /Меню -->
+    <header class="header">
+      <h2 class="header-tagline">новая линия мебели</h2>
+      <div class="logo header-logo">
         <img src="img/logo.png" alt="логотип">
       </div>
       <!-- Кнопка гамбургер-меню -->
-      <div class="hamburger">
-        <a href="#" class="hamburger-btn"><span></span></a>
-      </div>
+      <a href="#" class="header-btn"><span></span></a>
       <!-- /Кнопка гамбургер-меню -->
-    </div>
+    </header>
     <div class="main-offer">
       <div class="main-offer-text">
         <span class="main-offer-text__time">— только до 30 ноября —</span>
@@ -78,12 +75,56 @@
       <form action="" class="advice-form">
         <input type="text" class="advice-form__input" required name="username" placeholder="представьтесь">
         <input type="tel" class="advice-form__input" required name="userphone" placeholder="телефон">
-        <span class="advice-form__polici">Нажимая на кнопку, вы даете согласие на обработку персональных данных и принимаете политику конфиденциальности.</span>
+        <span class="advice-form__polici">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+          принимаете политику конфиденциальности.</span>
         <input type="submit" class="advice-form__btn" value="отправить">
       </form>
     </div>
   </section>
   <!-- /Консультация -->
+
+  <!-- Преимущества -->
+  <section class="advantages">
+    <div class="advantages-bg">
+
+    </div>
+    <div class="advantages-list">
+      <div class="advantages-item">
+        <span class="advantages-item__text">качество материалов</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+      <div class="advantages-item">
+        <span class="advantages-item__text">сроки выполнения заказа</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+      <div class="advantages-item">
+        <span class="advantages-item__text">стоимость работы</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+      <div class="advantages-item">
+        <span class="advantages-item__text">лояльность к покупателю</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+      <div class="advantages-item">
+        <span class="advantages-item__text">акции и специальные предложения</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+      <div class="advantages-item">
+        <span class="advantages-item__text">формы оплаты</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+      <div class="advantages-item">
+        <span class="advantages-item__text">рассрочка и кредит</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+      <div class="advantages-item">
+        <span class="advantages-item__text">архитекторы и дизайнеры</span>
+        <a href="" class="advantages-item__link">подробнее</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- /Преимущества -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/main.js"></script>

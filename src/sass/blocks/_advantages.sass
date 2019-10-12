@@ -1,0 +1,53 @@
+.advantages  
+  background: linear-gradient(to right, $main-color 77%, $brown-color 23%)
+  padding-top: 121px
+  &-bg
+    width: 77%
+    height: 772px
+    background: #E5D2B4
+    opacity: 0.3
+  &-list
+    padding: 309px 0 188px
+    max-width: 1360px
+    margin: 0 auto
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 293px
+    height: 293px
+    border: 2px solid rgba(81, 81, 81, 0.2)
+    margin-bottom: 50px
+    padding: 25px 33px
+    box-sizing: border-box
+    background: $main-color
+    &__text
+      position: relative
+      display: block
+      text-transform: uppercase
+      +bold
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 3px
+      color: $red-color
+      padding-left: 27px
+      &:before
+        position: absolute
+        top: 10px
+        left: 0px
+        content: ''
+        width: 16px
+        height: 2px
+        background: $red-color
+    &__link
+      display: block
+      text-align: right
+      font-size: 13px
+      text-transform: uppercase
+      +bold
+      letter-spacing: 4px
+      color: rgba(#000000, 0.4)    
