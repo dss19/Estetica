@@ -17,4 +17,45 @@ img
   font-size: 13px
   +bold
   text-transform: uppercase
-  outline: none      
+  outline: none
+
+//Ховеры
+@media (min-width: 1025px)
+  .menu
+    &__link
+      &:hover
+        color: $red-color
+  .header
+    &-btn 
+      &:hover
+        span
+          background-color: $red-color
+          &:before, &:after
+            background-color: $red-color
+  .main
+    &-offer 
+      &-text
+        &__btn
+          &:hover
+            background: $hover-color
+  .advice, .catalog
+    &-form 
+      &__btn
+        &:hover
+          background-color: $red-color
+  .footer
+    &-btn
+      &:hover
+        border: 2px solid $hover-color
+        color: $hover-color
+  .advantages
+    &-item
+      &__cover
+        &:hover
+          background: rgba(#000000, 0.3)
+        &:hover .advantages-item__text
+          color: $main-color                                  
+        &:hover .advantages-item__text:before
+          background-color: $main-color                                  
+        &:hover .advantages-item__link
+          color: $main-color                                  
