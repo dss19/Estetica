@@ -12,14 +12,15 @@
   z-index: 5
   transform: translateY(-100%)
   transition: 0.3s
-  padding: 0px 210px
+  padding: 0px 202px 
   &_active
     transform: translateY(0)
   &-group
     display: flex
-    justify-content: space-between
-    max-width: 576px
-    width: 100%
+    justify-content: space-between    
+    flex-basis: 50%
+    &_unbordered
+      padding-right: 131px
     &_bordered
       border: 1px solid $grey-color
       padding: 28px 0 28px 100px

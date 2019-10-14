@@ -1,0 +1,88 @@
+.about
+  padding: 153px 0 0
+  &-item
+    display: flex
+    align-items: center
+    margin-bottom: 212px
+  &-img
+    width: 990px
+    margin: 0 110px 0 100px
+  &-text 
+    width: 440px
+    &__title
+      position: relative
+      display: block
+      width: 419px
+      text-transform: uppercase
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 4px
+      padding-left: 25px
+      margin-bottom: 53px
+      +reg
+      color: #000000
+      &:before
+        position: absolute
+        top: 10px
+        left: 0px
+        content: ''
+        width: 16px
+        height: 2px
+        background: #000000
+    &__subtitle
+      font-size: 18px
+      line-height: 28px
+      +reg
+      color: $grey-color    
+  &-description
+    transform: translateY(-24px)
+    display: flex
+    justify-content: space-between
+    width: 1500px
+    height: 575px
+    margin: 0 auto
+    background: $brown-color
+    padding: 0 110px
+    &-item 
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 763px
+      width: 550px
+      padding-top: 90px
+    &-text 
+      color: $main-color
+      &__title
+        position: relative
+        display: block                
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 24px
+        letter-spacing: 4px
+        padding-left: 25px
+        margin-bottom: 53px
+        +reg        
+        &:before
+          position: absolute
+          top: 10px
+          left: 0px
+          content: ''
+          width: 16px
+          height: 2px
+          background: $main-color
+      &__subtitle
+        font-size: 18px
+        line-height: 28px
+        +reg
+        color: $main-color     
+
+.hardware
+  justify-content: center
+  &-text 
+    margin-right: 80px
+    width: 470px
+    ul, li 
+      color: $grey-color
+  &-img 
+    width: 590px 
+    margin: 0         
