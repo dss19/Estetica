@@ -36,18 +36,11 @@ $(document).ready(function() {
     },
   });
   
-  // var mySwiper2 = new Swiper ('.slider2', {
-  //   // Optional parameters    
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.button-next_light',
-  //     prevEl: '.button-prev_light',
-  //   },
-  //   thumbs: {
-  //     swiper: {
-  //       el: '.swiper-container-thumbs',
-  //       slidesPerView: 6,        
-  //     }
-  //   }
-  // });
+  // fancybox
+  $('[data-fancybox="gallery"]').fancybox({
+    thumbs : {
+      autoStart : true
+    },
+    loop: true,
+  });
 });
