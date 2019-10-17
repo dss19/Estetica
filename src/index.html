@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Estetica</title>
 </head>
@@ -42,7 +43,7 @@
         <h1 class="main-offer-text__title">Скидки до 70%</h1>
         <h3 class="main-offer-text__subtitle">Успей купить<br>по уникальной цене</h3>
         <a href="" class="btn main-offer-text__btn">узнать больше</a>
-      </div>
+      </div>      
       <div class="main-offer-desc">
         <div class="main-offer-desc-item">
           <span class="main-offer-desc-item__title">новая<br>линия</span>
@@ -61,6 +62,39 @@
         </div>
       </div>
     </div>
+    <!-- Сладейр -->
+    <div class="main-slider">
+      <div class="swiper-container slider1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slider1/barcelona.jpg" alt="барселона">
+            <div class="swiper-slide-info">
+              <span class="swiper-slide-info__name">Барселона</span>
+              <span class="swiper-slide-info__line"></span>
+              <span class="swiper-slide-info__price">от 74 415 руб</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider1/kuznetsk.jpg" alt="кузнецк">
+            <div class="swiper-slide-info">
+              <span class="swiper-slide-info__name">Кузнецк</span>
+              <span class="swiper-slide-info__line"></span>
+              <span class="swiper-slide-info__price">от 3 руб 50 коп</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider1-nav">
+          <div class="button-prev">
+            <img src="img/icons/prev.png" alt="назад">
+          </div>
+          <div class="button-next">
+            <img src="img/icons/next.png" alt="вперед">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Сладейр -->
   </main>
   <!-- /Главный блок -->
 
@@ -85,9 +119,75 @@
 
   <!-- Преимущества -->
   <section class="advantages">
-    <div class="advantages-bg">
-
+    <div class="advantages-bg"></div>
+    <!-- Сладер 2 -->
+    <div class="advantages-slider">
+      <div class="swiper-container gallery-top slider2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide2">                     
+            <div class="swiper-slide-text">
+              <span class="swiper-slide-text__brand">кровать ESTETICA Lite</span>
+              <span class="swiper-slide-text__name">Барселона</span>
+              <span class="swiper-slide-text__price">от 45 500 руб</span>
+              <span class="swiper-slide-text__desc">Кровать Барселона бренда Эстетика - уникальная разработка среди
+                элитных кроватей категории люкс, сочетающая в себе оригинальный изысканный дизайн, удивительный комфорт
+                и функциональность.</span>
+              <a href="#" class="swiper-slide-text__link">подробнее</a>  
+              <a href="#" class="btn swiper-slide-text__btn">узнать мою цену</a>  
+            </div>
+            <div class="slide2-img">
+              <a href="javascript:;" data-fancybox-trigger="gallery" data-fancybox-index="00"><img src="img/slider2/bracelona.png" alt="барселона"></a>
+            </div>
+          </div>
+          <div class="swiper-slide slide2">                     
+            <div class="swiper-slide-text">
+              <span class="swiper-slide-text__brand">кровать ESTETICA Lite</span>
+              <span class="swiper-slide-text__name">Барселона</span>
+              <span class="swiper-slide-text__price">от 45 500 руб</span>
+              <span class="swiper-slide-text__desc">Кровать Барселона бренда Эстетика - уникальная разработка среди
+                элитных кроватей категории люкс, сочетающая в себе оригинальный изысканный дизайн, удивительный комфорт
+                и функциональность.</span>
+              <a href="#" class="swiper-slide-text__link">подробнее</a>  
+              <a href="#" class="btn swiper-slide-text__btn">узнать мою цену</a>  
+            </div>
+            <div class="slide2-img">
+              <a href="javascript:;" data-fancybox-trigger="gallery" data-fancybox-index="01"><img src="img/slider2/bracelona.png" alt="барселона"></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider2-nav">
+          <div class="button-prev_light">
+            <img src="img/icons/prev.png" alt="назад">
+          </div>
+          <div class="button-next_light">
+            <img src="img/icons/next.png" alt="вперед">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slider2/thumbs/barcelona.jpg" alt="бареслона">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider2/thumbs/Venice.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider2/thumbs/geneva.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider2/thumbs/renessance.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider2/thumbs/unknown.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider2/thumbs/unknown2.jpg" alt="">
+          </div>          
+        </div>
+      </div>
     </div>
+    <!-- /Сладер 2 -->
     <div class="advantages-list">
       <div class="advantages-item">
         <img src="img/advantages/desctop/quality.jpg" alt="качество">
@@ -259,6 +359,10 @@
     </div>
   </section>
   <!-- /Вопросы -->
+  <div class="gallery">
+    <a href="img/gallery/barcelona.jpg" data-fancybox="gallery"></a>
+    <a href="img/gallery/geneva.jpg" data-fancybox="gallery"></a>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -277,6 +381,8 @@
   <!-- /Footer -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
   <script src="js/main.js"></script>
 </body>
 

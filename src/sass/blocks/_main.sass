@@ -2,7 +2,9 @@
   position: relative
   height: 1174px  
   background: linear-gradient(to left, $main-color 75%, $brown-color 25%)
+  
   &-offer    
+    position: relative
     max-width: 1500px
     width: 100%
     height: 1155px
@@ -41,7 +43,8 @@
         margin: 0 auto
         letter-spacing: 4px
         padding: 18px 65px
-        transition: 0.3s  
+        transition: 0.3s
+          
     &-desc
       display: flex
       justify-content: space-between      
@@ -70,6 +73,13 @@
         &__subtitle
           font-size: 18px
           line-height: 28px
+  //слайдер
+  &-slider
+    position: absolute
+    top: 201px
+    right: 0
+    max-width: 59%
+    height: auto        
 .header
   display: flex  
   align-items: center
