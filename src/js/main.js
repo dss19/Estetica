@@ -43,4 +43,27 @@ $(document).ready(function() {
     },
     loop: true,
   });
+
+  // Modal
+  $('.btn').on('click', function(e) {
+    e.preventDefault();
+    $('.modal').toggleClass('modal_active');
+  });
+
+  $('.modal-close').on('click', function() {
+    $('.modal').removeClass('modal_active');
+  });
+
+  // Popup
+  $('.advantages-item__link').on('click', function(e) {
+    e.preventDefault();
+    $('.advantages-wrap-popup').toggleClass('advantages-wrap-popup_active');
+    let target = $(this).attr('data-target');
+    $('.popup-inner').hide();
+    $('#' + target).show();    
+  });
+
+  $('.popup__close').on('click', function() {
+    $('.advantages-wrap-popup').removeClass('advantages-wrap-popup_active');
+  })
 });

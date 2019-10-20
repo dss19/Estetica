@@ -1,0 +1,47 @@
+.popup
+  position: relative
+  width: 100%   
+  padding: 137px 110px
+  &__close
+    position: absolute
+    top: 50px
+    right: 50px
+    z-index: 1
+    cursor: pointer
+  &-inner
+    display: flex       
+    &__img
+      display: block
+      width: 370px
+      height: 370px
+      margin-right: 70px
+      img 
+        display: block
+    &-text 
+      width: 700px
+      padding: 30px 0
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &__title
+        position: relative
+        font-size: 20px
+        +bold
+        letter-spacing: 3px
+        color: #000000
+        text-transform: uppercase
+        padding-left: 27px
+        &:before
+          position: absolute
+          top: 9px
+          left: 0px
+          content: ''
+          width: 16px
+          height: 2px
+          background: #000000
+      &__subtitle
+        font-size: 18px
+        line-height: 28px
+        +reg 
+        color: $grey-color
+
