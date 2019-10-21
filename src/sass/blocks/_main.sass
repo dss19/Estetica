@@ -12,7 +12,7 @@
     background: #fafafa
     &-text 
       text-align: center
-      width: 592px
+      max-width: 592px
       padding-top: 150px
       margin-bottom: 219px
       &__time
@@ -138,9 +138,43 @@
           transform: rotate(45deg)
         &:before
           bottom: -4px
-          transform: rotate(-45deg)  
-    
-
-
-
-      
+          transform: rotate(-45deg)
+@media (max-width: 1440px)
+  .main
+    height: 980px
+    &-offer 
+      max-width: 1127px
+      height: 945px
+      &-text
+        max-width: 434px
+        padding-top: 88px
+        margin-bottom: 160px
+        &__time
+          font-size: 12px
+        &__title
+          font-size: 60px
+          line-height: 70px
+        &__subtitle
+          font-size: 16px
+        &__btn
+          font-size: 12px
+      &-desc
+        padding: 0 80px
+        &-item
+          width: 240px 
+          &__title
+            font-size: 16px
+            &:before
+              top: 10px
+          &__subtitle
+            font-size: 14px            
+    &-slider
+      top: 160px
+        
+  .header
+    height: 160px
+    &-tagline
+      font-size: 12px
+    &-logo
+      padding-right: 100px 
+      width: 250px   

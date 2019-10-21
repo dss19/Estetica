@@ -78,8 +78,27 @@
       padding: 17px 25px
       cursor: pointer
       transition: 0.3s
-      transform: translateX(-200px)  
-        
-
-
-    
+      transform: translateX(-200px)
+@media (max-width: 1440px)
+  .modal
+    &-dialog 
+      max-width: 1130px
+    &-block
+      padding-top: 150px  
+    &-text
+      &__title
+        font-size: 70px
+        line-height: 70px
+      &__subtitle
+        font-size: 16px
+        line-height: 20px
+    &-form
+      width: 250px
+      &__input
+        font-size: 12px
+        margin-bottom: 16px
+      &__polici
+        font-size: 12px
+      &__btn
+        font-size: 12px
+        transform: translateX(-132px)  
