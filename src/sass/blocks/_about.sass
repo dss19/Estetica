@@ -74,8 +74,7 @@
         font-size: 18px
         line-height: 28px
         +reg
-        color: $main-color     
-
+        color: $main-color
 .hardware
   justify-content: center
   &-text 
@@ -120,4 +119,17 @@
       ul, li
         font-size: 14px
     &-img 
-      width: 440px 
+      width: 440px
+@media (max-width: 1024px)
+  .about
+    &-item
+      margin-bottom: 140px
+    &-img 
+      margin: 0 30px 0 0
+    &-text 
+      margin-right: 20px
+      &__title
+        margin-bottom: 35px
+    &-description
+      width: 100%
+      padding: 0 70px              

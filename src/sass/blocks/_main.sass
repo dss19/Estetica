@@ -163,18 +163,38 @@
         &-item
           width: 240px 
           &__title
-            font-size: 16px
+            font-size: 16px            
             &:before
-              top: 10px
+              top: 11px
           &__subtitle
-            font-size: 14px            
+            font-size: 14px
+            line-height: 20px            
     &-slider
-      top: 160px
-        
+      top: 160px        
   .header
     height: 160px
     &-tagline
       font-size: 12px
     &-logo
       padding-right: 100px 
-      width: 250px   
+      width: 250px
+@media (max-width: 1024px)
+  .main
+    &-offer 
+      width: 100%
+      height: 830px
+      &-text
+        max-width: 41%
+        padding-top: 60px
+        margin-bottom: 100px
+    &-slider
+      top: 150px    
+  .header
+    height: 150px
+    padding-right: 30px
+    &-tagline
+      width: 27%
+    &-logo
+      width: 137px
+      padding: 0
+      margin-right: 120px  
