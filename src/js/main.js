@@ -65,5 +65,15 @@ $(document).ready(function() {
 
   $('.popup__close').on('click', function() {
     $('.advantages-wrap-popup').removeClass('advantages-wrap-popup_active');
-  })
+  });
+
+  // скролл
+  $('.menu__link').on('click', function () {    
+    $('.menu').removeClass('menu_active');
+    $('.header-btn').removeClass('header-btn_active');
+    let scr = $(this).attr('href');        
+    $('body,html').animate({
+      scrollTop: $(scr).offset().top
+    }, 700);
+  });  
 });
