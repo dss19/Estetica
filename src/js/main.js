@@ -50,7 +50,7 @@ $(document).ready(function() {
     $('.modal').toggleClass('modal_active');
   });
 
-  $('.modal-close').on('click', function() {
+  $('.modal-dialog-close').on('click', function() {
     $('.modal').removeClass('modal_active');
   });
 

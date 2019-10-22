@@ -199,11 +199,13 @@
       margin-right: 120px
 @media (max-width: 576px) and (min-width: 320px)
   .main
+    display: flex
+    flex-direction: column
     background: $main-color
-    height: 1388px
+    height: auto
     &-offer
-      padding: 250px 0 0
-      height: 1300px 
+      padding: 20px 0 
+      height: auto 
       &-desc
         flex-direction: column
         padding: 0 24px
@@ -226,10 +228,13 @@
         &__subtitle
           margin-bottom: 20px  
     &-slider
+      position: relative
+      order: -1
       max-width: 100%
-      top: 86px        
+      top: 0        
 
   .header
+    order: -1
     height: 86px
     padding: 0 24px
     &-tagline

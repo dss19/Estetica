@@ -4,10 +4,11 @@
   padding: 323px 0 113px  
   &-wrap
     display: flex
-    width: 940px
-  &-text 
-    width: 454px
-    padding-left: 18px
+    justify-content: space-between
+    max-width: 940px
+    width: 100%
+  &-text
+    max-width: 428px    
     &__title
       display: block
       +bold 
@@ -22,7 +23,7 @@
   &-form 
     position: relative
     width: 330px
-    margin-left: 155px
+    
     padding-top: 19px
     &__input
       width: 100%
@@ -59,16 +60,18 @@
   .advice
     padding: 250px 0 113px
     &-wrap
-      width: 710px
+      max-width: 710px
     &-text
+      max-width: 280px
       &__title
         font-size: 40px
         line-height: 48px
-        max-width: 400px
+        
       &__subtitle
         font-size: 14px
         line-height: 20px
     &-form
+      width: 250px
       padding-top: 0 
       &__input
         width: 250px
@@ -92,10 +95,10 @@
     padding: 40px 24px
     &-wrap
       flex-direction: column
-      width: 100%
+      max-width: 320px
     &-text 
       width: 100%
-      padding-left: 0
+      
       &__title
         margin-bottom: 30px
       &__subtitle
