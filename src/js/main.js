@@ -55,8 +55,7 @@ $(document).ready(function() {
   });
 
   // Popup
-  $('.advantages-item__link').on('click', function(e) {
-    e.preventDefault();
+  $('.advantages-item').on('click', function() {    
     $('.advantages-wrap-popup').toggleClass('advantages-wrap-popup_active');
     let target = $(this).attr('data-target');
     $('.popup-inner').hide();
