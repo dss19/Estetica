@@ -60,7 +60,7 @@ $(document).ready(function() {
   // Popup
   $('.advantages-item').on('click', function() {    
     $('.advantages-wrap-popup').toggleClass('advantages-wrap-popup_active');
-    let target = $(this).attr('data-target');
+    var target = $(this).attr('data-target');
     $('.popup-inner').hide();
     $('#' + target).show();    
   });
@@ -73,7 +73,7 @@ $(document).ready(function() {
   $('.menu__link').on('click', function () {    
     $('.menu').removeClass('menu_active');
     $('.header-btn').removeClass('header-btn_active');
-    let scr = $(this).attr('href');        
+    var scr = $(this).attr('href');        
     $('body,html').animate({
       scrollTop: $(scr).offset().top
     }, 700);
