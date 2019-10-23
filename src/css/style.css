@@ -1406,7 +1406,7 @@ img {
   }
   .main-offer-text {
     max-width: 434px;
-    padding-top: 88px;
+    padding: 88px 24px 0;
     margin-bottom: 160px;
   }
   .main-offer-text__time {
@@ -2216,7 +2216,7 @@ img {
     padding-bottom: 24px;
   }
   .advantages-list {
-    padding: 40px 24px;
+    padding: 40px 24px 90px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2281,7 +2281,7 @@ img {
 }
 
 .catalog-text {
-  width: 525px;
+  max-width: 525px;
 }
 
 .catalog-text__title {
@@ -2392,7 +2392,7 @@ img {
 
 @media (max-width: 576px) and (min-width: 320px) {
   .catalog {
-    padding: 0 24px 50px;
+    padding: 0 24px 80px;
   }
   .catalog-wrap {
     -webkit-box-orient: vertical;
@@ -2640,6 +2640,53 @@ img {
 @media (max-width: 576px) and (min-width: 320px) {
   .about {
     display: none;
+  }
+}
+
+.mobile-about {
+  display: none;
+}
+
+.mobile-about-text {
+  padding: 50px 24px;
+  background: #F8F2E9;
+}
+
+.mobile-about-text__title {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.mobile-about-text__title:before {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background: #000000;
+}
+
+.mobile-about-text__subtitle {
+  display: block;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: normal;
+  color: #515151;
+}
+
+@media (max-width: 576px) and (min-width: 320px) {
+  .mobile-about {
+    display: block;
   }
 }
 
@@ -3033,6 +3080,7 @@ img {
 
 @media (max-width: 576px) and (min-width: 320px) {
   .popup {
+    max-width: 370px;
     width: 101%;
     height: 100%;
     background: #ffffff;
@@ -3051,11 +3099,15 @@ img {
     border: 2px solid rgba(81, 81, 81, 0.2);
   }
   .popup-inner__img {
-    max-width: 308px;
+    max-width: 370px;
+    width: 100%;
     height: auto;
     margin: 0;
   }
   .popup-inner-text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 30px 24px;
     width: 100%;
     height: 600px;
@@ -3065,7 +3117,7 @@ img {
     margin-bottom: 15px;
   }
   .popup-inner-text__subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

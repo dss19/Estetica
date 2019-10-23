@@ -35,6 +35,9 @@ $(document).ready(function() {
       swiper: galleryThumbs,
     },
   });
+  var mySwiper2 = new Swiper('.slider3', {
+    loop: true,
+  });
   
   // fancybox
   $('[data-fancybox="gallery"]').fancybox({
